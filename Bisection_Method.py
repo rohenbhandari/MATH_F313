@@ -1,3 +1,7 @@
+import timeit
+
+start = timeit.timeit()
+
 import math
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,3 +28,6 @@ while abs(a - b) > check:
 
 c = (a+b)*.5
 print c, i
+
+end = timeit.timeit()
+print end - start
