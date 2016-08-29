@@ -1,3 +1,7 @@
+import timeit
+
+start = timeit.timeit()
+
 import math
 import numpy as np
 import matplotlib.pyplot
@@ -19,3 +23,7 @@ while abs(b - a) > check:
   b = c
 
 print c, f(c)
+
+end = timeit.timeit()
+
+print start - end
